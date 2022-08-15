@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".profile">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/account_profile_image"
+            android:layout_width="119dp"
+            android:layout_height="107dp"
+            android:layout_gravity="center"
+            android:foregroundTint="@color/blood_red"
+            android:src="@drawable/pro"
+            app:civ_border_color="@color/blood_red"
+            app:civ_border_overlay="true"
+            app:civ_border_width="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+        <EditText
+            android:id="@+id/profile_fname"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:background="@drawable/custom_input_field"
+            android:hint="First Name"
+            android:paddingLeft="20dp"
+            android:inputType="text"
+            android:textColor="@color/light_gray"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/profile_lname"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:background="@drawable/custom_input_field"
+            android:hint="Last Name"
+            android:paddingLeft="20dp"
+            android:inputType="text"
+            android:textColor="@color/light_gray"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What are you wish to do?"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/light_gray"/>
+        <RadioGroup
+            android:id="@+id/profile_usertype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp">
+
+            <RadioButton
+                android:id="@+id/profile_donate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I wish to donate"
+                android:layout_marginRight="10dp"
+                android:buttonTint="@color/blood_red"
+                android:textColor="@color/light_gray"
+                android:textSize="16sp"
+                />
+
+            <RadioButton
+                android:id="@+id/profile_request"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="I'm seeking for blood"
+                android:gravity="center"
+                android:buttonTint="@color/blood_red"
+                android:textColor="@color/light_gray"
+                android:textSize="16sp"
+                />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/profile_Nic"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_input_field"
+            android:gravity="center_vertical"
+            android:hint="NIC Number"
+            android:inputType="text"
+            android:maxLength="12"
+            android:paddingLeft="20dp"
+            android:textColor="@color/light_gray"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/profile_Phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+
+            android:background="@drawable/custom_input_field"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="Mobile Number"
+            android:inputType="phone"
+            android:paddingLeft="20dp"
+            android:textColor="@color/light_gray"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/light_gray"/>
+        <RadioGroup
+            android:id="@+id/profile_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp">
+
+            <RadioButton
+                android:id="@+id/profile_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Male"
+                android:buttonTint="@color/blood_red"
+                android:textColor="@color/light_gray"
+                android:textSize="16sp"
+                />
+
+            <RadioButton
+                android:id="@+id/profile_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Female"
+                android:gravity="center"
+                android:buttonTint="@color/blood_red"
+                android:textColor="@color/light_gray"
+                android:textSize="16sp"
+                />
+
+            <RadioButton
+                android:id="@+id/profile_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Not Prefer To Say"
+                android:gravity="center"
+                android:buttonTint="@color/blood_red"
+                android:textColor="@color/light_gray"
+                android:textSize="16sp"
+                />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/profile_dob"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_input_field"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:hint="Date of birth"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/profile_address"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+
+            android:layout_weight="1"
+            android:background="@drawable/custom_input_field"
+            android:gravity="center_vertical"
+            android:hint="Address"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:textColor="@color/light_gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="120dp"
+            android:text="Select Your Blood Type"
+            android:textColor="@color/light_gray"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/profile_bloodbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/profile_bld_A_positive"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/light_gray"
+                android:buttonTint="@color/blood_red"
+                android:text="A+"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/profile_bld_A_negative"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/light_gray"
+                android:buttonTint="@color/blood_red"
+                android:text="A-" />
+
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/profile_bld_B_positive"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/light_gray"
+                android:buttonTint="@color/blood_red"
+                android:text="AB+" />
+
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/profile_bld_B_negative"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/light_gray"
+                android:buttonTint="@color/blood_red"
+                android:text="AB-" />
+
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/profile_bld_AB_positive"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/light_gray"
+                android:buttonTint="@color/blood_red"
+                android:text="B+" />
+
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/profile_bld_AB_negative"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/light_gray"
+                android:buttonTint="@color/blood_red"
+                android:text="B-" />
+
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/profile_bld_O_positive"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/light_gray"
+                android:buttonTint="@color/blood_red"
+                android:text="O+" />
+
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/profile_bld_O_negative"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/light_gray"
+                android:buttonTint="@color/blood_red"
+                android:text="O-" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/profile_update"
+        android:layout_width="229dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="88dp"
+        android:background="@drawable/round_button"
+        android:text="Update Detail"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        app:layout_constraintVertical_bias="0.465" />
+</androidx.constraintlayout.widget.ConstraintLayout>

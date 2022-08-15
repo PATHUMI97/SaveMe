@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="200dp"
+    android:layout_height="250dp"
+    android:layout_margin="5dp"
+    android:padding="2dp"
+    android:backgroundTint="@color/blood_red"
+    android:background="@drawable/custom_input_search">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="10dp"
+        app:cardElevation="0dp"
+        android:backgroundTint="@color/blood_red"
+        app:cardCornerRadius="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/account_profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/pp"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.02" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/horizontal_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Name"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/horizontal_bld"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="O+"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        />
+
+
+</LinearLayout>

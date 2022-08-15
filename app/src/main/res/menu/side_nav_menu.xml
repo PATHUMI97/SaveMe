@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+    android:id="@+id/drw_home"
+    android:icon="@drawable/home"
+    android:title="Home"
+    android:checked="true"/>
+
+    <item
+        android:id="@+id/drw_tips"
+        android:icon="@drawable/tips"
+        android:title="Tips"/>
+
+    <item
+        android:id="@+id/drw_request"
+        android:icon="@drawable/request"
+        android:visible="false"
+        android:title="Request"/>
+    <item
+        android:id="@+id/drw_donat"
+        android:icon="@drawable/request"
+        android:visible="false"
+        android:title="Donors"/>
+
+    <item
+        android:id="@+id/drw_share"
+        android:icon="@drawable/share"
+        android:title="Share"/>
+
+<item android:title="Profile">
+    <menu>
+
+    <item
+        android:id="@+id/drw_profile"
+        android:icon="@drawable/profile"
+        android:title="Edit Profile"/>
+
+    <item
+        android:id="@+id/drw_history"
+        android:icon="@drawable/history"
+        android:title="Donation History"/>
+
+
+
+        <item
+            android:id="@+id/drw_logout"
+            android:icon="@drawable/logout"
+            android:title="Logout"/>
+    </menu>
+</item>
+
+    <item android:title="Commiunity">
+        <menu>
+
+            <item
+                android:id="@+id/drw_about"
+                android:icon="@drawable/about"
+                android:title="About us"/>
+
+            <item
+                android:id="@+id/drw_rate"
+                android:icon="@drawable/rate"
+                android:title="Rate Us"/>
+
+
+        </menu>
+    </item>
+
+</menu>

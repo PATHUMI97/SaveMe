@@ -1,0 +1,26 @@
+<resources>
+    <string name="web_client_id">453354057617-mduhqjo26gii72g531r4flttf8v7t93g.apps.googleusercontent.com</string>
+    <string name="app_name">donation</string>
+    <string name="title_activity_side_drawer">sideDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="gender">Select Gender</string>
+
+    <string-array name="gender">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Not Prefered To Say</item>
+
+    </string-array>
+</resources>

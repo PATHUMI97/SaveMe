@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    tools:context=".ui.account.AccountFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/blood_red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/account_profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/pp"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.02" />
+
+        <TextView
+            android:id="@+id/account_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Pathumi Rashmika"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/account_profile_image" />
+
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="127dp"
+            android:layout_height="24dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/pink"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/account_name"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.339">
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:background="@color/blood_red"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:padding="10dp"
+                android:background="@color/blood_red"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/star"
+                app:tint="@color/white" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:padding="10dp"
+                android:background="@color/blood_red"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/life"
+                app:tint="@color/white" />
+
+            <ImageButton
+                android:id="@+id/account_msg"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:src="@drawable/txt"
+                android:background="@drawable/transparent_button"
+                android:padding="10dp"
+                app:tint="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/blood_red"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="4.4"
+                android:textColor="@color/eerie_black"
+                android:gravity="center"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="4 lives saved"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/account_type"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Messages"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/material_button"
+            android:drawableStart="@drawable/available"
+            android:drawableTint="@color/red"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="      Available to donate"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/material_button"
+            android:drawableStart="@drawable/address"
+            android:drawableTint="@color/red"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="      Manage Address"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/material_button"
+            android:drawableStart="@drawable/comlete"
+            android:drawableTint="@color/red"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="      Completed Tasks"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/material_button"
+            android:drawableStart="@drawable/history"
+            android:drawableTint="@color/red"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="      History"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/material_button"
+            android:drawableStart="@drawable/rate"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="      Ratings"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
