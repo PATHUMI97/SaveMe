@@ -46,8 +46,9 @@ Blood Donation Tips
 Check Blood Donation Eligibity
 
 ## Screenshots
+<!-- ![App Screenshot](https://github.com/PATHUMI97/SaveMe/blob/master/photo_2022-08-06_04-19-22.jpg)
 ![App Screenshot](https://github.com/PATHUMI97/SaveMe/blob/master/photo_2022-08-06_04-19-22.jpg)
 ![App Screenshot](https://github.com/PATHUMI97/SaveMe/blob/master/photo_2022-08-06_04-19-22.jpg)
-![App Screenshot](https://github.com/PATHUMI97/SaveMe/blob/master/photo_2022-08-06_04-19-22.jpg)
-![App Screenshot](https://github.com/PATHUMI97/SaveMe/blob/master/photo_2022-08-06_04-19-22.jpg)
+![App Screenshot](https://github.com/PATHUMI97/SaveMe/blob/master/photo_2022-08-06_04-19-22.jpg) -->
+<img src="https://raw.githubusercontent.com/imShakil/BloodBank/master/spalsh.png" alt="Splash Screen" width="98" height="200" />
 
