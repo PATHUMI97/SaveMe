@@ -10,9 +10,9 @@ This my 3rd year project for Handheld Device Programming II module.
 Easy contact between blood donor and blood seeker through this android application.
 Included:
 
-User Databases
-User Login & Sign up
-Donor Details
+User Databases\
+User Login & Sign up\
+Donor Details\
 Seeker Details
 Finding blood group easily
 Finding Near By Blood Donation Campaign
